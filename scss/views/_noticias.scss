@@ -1,0 +1,168 @@
+.gridcontainer-noticias{
+    display:grid;
+    grid-template-columns:100%;
+    grid-template-rows: 120px auto auto 90px;
+    grid-template-areas:
+    "header-noticias"
+    "title-noticias"
+    "section-noticias"
+    "section-noticiasdos"
+    "footer-noticias";
+     .header-noticias{
+    grid-area: "header-noticias";
+    }
+    
+    .section-noticias{
+        grid-area:"section-noticias";
+    }
+
+
+   .title-noticias{
+    grid-area: "title-noticias";
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10px;
+    &__p{
+        font-family: $font-principal;
+        font-size: 16px;
+    }
+    &__h1{
+        font-family: $font-principal;
+
+    }
+   
+}
+.section-noticiasdos{
+    grid-area: "section-noticiasdos";
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.footer-noticias{
+    grid-area: "footer-noticias";
+  
+}
+
+}
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+.noticia{
+    display: flex;
+    flex-direction: row;
+    font-family:$font-principal;
+    &__img{
+    width: 334px;
+    height: 188px;
+}
+    &__texto{
+    margin-left: 10px;
+    h3{
+        font-size: 20px;
+        
+        margin-top: 1px;
+    }
+  }
+}
+    .right__img{
+        position: relative;
+        display: inline-block;
+        .right__img__texto-abajo{
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            h3{
+                font-family: $font-principal;
+                font-size: 20px;
+            }
+        }
+    }
+
+
+.left{
+    &__img{
+        position: relative;
+    display: inline-block;
+    &__texto-abajo{
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: white;
+        h2{
+            font-family: $font-principal;
+            font-size: 24px;
+        }
+       
+    }
+    }
+    
+}
+
+.section-noticias{
+        margin: 0 auto;
+        max-width: 120rem;
+        width: 95%;
+    img{
+        width: 100%;
+        filter: brightness(65%);
+    }
+}
+@media (min-width: 768px) {
+
+    /* Aplicamos grid al padre */
+    /* Definimos que el grid se aplicara en columnas las cuales seran 2  por una fraccion de nuestro elemento padre */
+    .section-noticias {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    
+    
+    
+    /* Nuestra seccion de la izquierda ira de la columna 1 a la 3*/
+    .left {
+    grid-column: 1 / 3;
+    }
+    /* La seccions de la derecha ocupara los mismas columnas que seccion left, pero esta se colocara en la siguiente fila */
+    /* Al ser un elemento padre de dos div's que contienen imagenes podemos aplicar flex para que se alinien uno junto al otro, ya que por defecto las etiquetas div tienen display block*/
+    .right {
+        grid-column: 1 / 3;
+        display: flex;
+        gap: 1rem;
+    } }
+}
+
+    @media (min-width: 1080px) {
+        .section-noticias {
+          /* Cambiamos el grid a 3 columnas para asi extender la seccion de la izquierda */
+        grid-template-columns: repeat(3, 1fr);
+        
+        .left {
+          /* Ahora nuestra seccion de la izquierda va de la colunma 1 a la columna 3 */
+        grid-column: 1 / 3;
+        }
+        /* Y la seccion de la derecha, de la columna 3 a la 4 */
+        .right {
+        flex-wrap: wrap;
+        grid-column: 3 / 4;
+        }
+    }
+    }
+    @media (max-width:768px){
+    .noticia{
+        text-align: center;
+    flex-direction: column;
+    }
+    .right{
+        &__img{
+            margin-top: 15px;
+        }
+    }
+    }

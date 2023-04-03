@@ -1,0 +1,65 @@
+.gridcontainer-loscampeones{
+    
+    display:grid;
+    grid-template-columns:100%;
+    grid-template-rows: 120px auto 90px;
+    grid-template-areas:
+    "header-loscampeones"
+    "section-loscampeones"
+    "footer-loscampeones";
+     .header-loscampeones{
+    grid-area: "header-loscamppeones";
+    }
+     .footer-loscampeones{
+        grid-area: "footer-loscampeones";
+    }
+    .section-loscampeones{
+        grid-area:"section-loscampeones";
+    }
+
+}
+
+.title{
+    font-size: 32px;
+    text-align: center;
+    margin-top: 80px;
+    font-family: $font-principal;
+}
+.messiCopa{
+    text-align: center;
+}
+.section-loscampeones{
+    font-family: $font-principal;
+    .container-players{
+        margin: 0 auto;
+        width: 725px;
+        &__p{
+            margin-top: 50px;
+        }
+        span{
+            color: #fe5000;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    
+}
+@media (max-width: 1080px){
+    .messiCopa{
+        img{
+            width: 75%;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .container-players{
+        text-align: center;
+        img{
+            width: 75%;
+            
+        }
+    }
+}
+

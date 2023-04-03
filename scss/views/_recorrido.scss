@@ -1,0 +1,30 @@
+.gridcontainer-recorrido{
+    
+    display:grid;
+    grid-template-columns:100%;
+    grid-template-rows: 120px auto 90px;
+    grid-template-areas:
+    "header-recorrido"
+    "section-recorrido"
+    "footer-recorrido";
+    font-family: $font-principal;
+    
+.header{
+    grid-area: "header-recorrido";
+    }
+.footer{
+        grid-area: "footer-recorrido";
+    }
+    .form-texto{
+        grid-area:"section-recorrido";
+    }
+
+}
+
+@media (max-width: 1080px){
+    .imagenmedia{
+        img{
+            width: 75%;
+        }
+    }
+}

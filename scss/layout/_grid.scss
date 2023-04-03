@@ -1,0 +1,20 @@
+.gridcontainer{
+    
+    display:grid;
+    grid-template-columns:100%;
+    grid-template-rows: 120px 140vh 90px;
+    grid-template-areas:
+    "header"
+    "form-texto"
+    "footer";
+     .header{
+    grid-area: "header";
+    }
+     .footer{
+        grid-area: "footer";
+    }
+    .form-texto{
+        grid-area:"form-texto";
+    }
+
+}

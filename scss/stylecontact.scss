@@ -1,0 +1,25 @@
+// base
+@import "./base/typo";
+@import "./base/reset";
+// layout
+@import "./layout/grid.scss";
+//vendors
+@import"./vendors/bootstrap";
+// views
+@import"./views/recorrido";
+@import"./views/index";
+@import"./views/losCampeones";
+@import"./views/noticias";
+@import"./views/contact";
+
+.section{
+    &__h1{
+        font-size: 32px !important;
+    }
+    &__p{
+        font-size: 22px !important;
+    }
+}
+.sectioncss{
+    font-size: 18px;
+}
