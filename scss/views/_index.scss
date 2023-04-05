@@ -18,3 +18,10 @@
     }
 
 }
+.cajaHover{
+    &__div{
+        &__link:hover{
+        transform: scale(1.1);
+    }
+}
+}
