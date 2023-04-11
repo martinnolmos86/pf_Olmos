@@ -16,15 +16,7 @@
     }
 
     &__controls{
-        width: 100%;
-        background: #24303c;
-        padding: 10px;
-        border-radius: 4px;
-        margin-bottom: 16px;
-        border: 1px solid #1f53c5;
-        font-family: $font-principal;
-        font-size: 18px;
-        color: white;
+        @include controls;
     }
     &__botons{
         width: 100%;

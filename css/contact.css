@@ -22,15 +22,17 @@
 }
 
 .navbar {
+  display: grid;
   background-color: #0b2764;
   height: 130px;
+  flex-direction: column;
 }
 .navbar .contenedoImg {
   display: flex;
-  height: 60px;
-  width: 100%;
   justify-content: center;
   align-items: center;
+  height: 60px;
+  width: 100%;
 }
 .navbar .contenedoImg__logo {
   height: 55px;
@@ -49,6 +51,10 @@
   padding: 5px;
   text-decoration: none;
   color: white;
+}
+.navbar .lista__ul__a:hover {
+  border-bottom: 1px solid white;
+  transition: 0.02s;
 }
 
 .header {
@@ -136,6 +142,7 @@
 
 .cajaHover__div__link:hover {
   transform: scale(1.1);
+  transition: 0.3s;
 }
 
 .gridcontainer-loscampeones {

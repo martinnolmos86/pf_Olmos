@@ -17,7 +17,7 @@
     }
 
 
-   .title-noticias{
+.title-noticias{
     grid-area: "title-noticias";
     width: 95%;
     margin: 0 auto;
@@ -40,20 +40,19 @@
 }
 .footer-noticias{
     grid-area: "footer-noticias";
-  
 }
 
 }
 html {
     box-sizing: border-box;
-  }
-  
+}
+
   *,
   *:before,
   *:after {
     box-sizing: inherit;
-  }
-  
+}
+
 .noticia{
     display: flex;
     flex-direction: row;
@@ -69,7 +68,7 @@ html {
         
         margin-top: 1px;
     }
-  }
+}
 }
     .right__img{
         position: relative;
@@ -100,7 +99,6 @@ html {
             font-family: $font-principal;
             font-size: 24px;
         }
-       
     }
     }
     

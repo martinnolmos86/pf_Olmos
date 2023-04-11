@@ -1,14 +1,13 @@
 
 .navbar{
-    // display: grid;
+    display: grid;
     background-color:$color-primary;
     height: 130px;  
+    flex-direction: column;
         .contenedoImg{
-        display: flex;
+        @include flex (flex , center , center);
         height: 60px;
         width: 100%;
-        justify-content: center;
-        align-items: center;
         &__logo{
         height: 55px;
         width: 55px;
@@ -16,9 +15,7 @@
     }
     
     .lista{
-        display:flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, center, center);
         width: 100%;
         height: 80px;
         font-family: $font-principal;
@@ -27,6 +24,12 @@
         padding: 5px;
         text-decoration: none;
         color: white;
+        }
+    }
+    .lista{
+        &__ul__a:hover{
+            border-bottom: 1px solid white;
+            transition: 0.02s;
         }
     }
 }
