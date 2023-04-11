@@ -2,13 +2,13 @@
     
     display:grid;
     grid-template-columns:100%;
-    grid-template-rows: 120px 140vh 90px;
+    grid-template-rows: 130px 140vh 90px;
     grid-template-areas:
-    "header"
+    "navbar"
     "form-texto"
     "footer";
-     .header{
-    grid-area: "header";
+     .navbar{
+    grid-area: "navbar";
     }
      .footer{
         grid-area: "footer";

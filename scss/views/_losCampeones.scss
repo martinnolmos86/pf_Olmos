@@ -2,13 +2,13 @@
     
     display:grid;
     grid-template-columns:100%;
-    grid-template-rows: 120px auto 90px;
+    grid-template-rows: 130px auto 90px;
     grid-template-areas:
-    "header-loscampeones"
+    "navbar"
     "section-loscampeones"
     "footer-loscampeones";
-     .header-loscampeones{
-    grid-area: "header-loscamppeones";
+     .navbar{
+    grid-area: "navbar";
     }
      .footer-loscampeones{
         grid-area: "footer-loscampeones";

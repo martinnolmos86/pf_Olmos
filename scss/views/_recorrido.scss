@@ -2,15 +2,15 @@
     
     display:grid;
     grid-template-columns:100%;
-    grid-template-rows: 120px auto 90px;
+    grid-template-rows: 130px auto 90px;
     grid-template-areas:
-    "header-recorrido"
+    "navbar"
     "section-recorrido"
     "footer-recorrido";
     font-family: $font-principal;
     
-.header{
-    grid-area: "header-recorrido";
+.navbar{
+    grid-area: "navbar";
     }
 .footer{
         grid-area: "footer-recorrido";

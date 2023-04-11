@@ -3,14 +3,17 @@
 @import "./base/reset";
 // layout
 @import "./layout/grid.scss";
+@import"./layout/nav";
 //vendors
 @import"./vendors/bootstrap";
+@import"./vendors/mq";
 // views
 @import"./views/recorrido";
 @import"./views/index";
 @import"./views/losCampeones";
 @import"./views/noticias";
 @import"./views/contact";
+
 
 .section{
     &__h1{

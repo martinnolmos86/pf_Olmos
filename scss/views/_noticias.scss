@@ -1,15 +1,15 @@
 .gridcontainer-noticias{
     display:grid;
     grid-template-columns:100%;
-    grid-template-rows: 120px auto auto 90px;
+    grid-template-rows: 130px auto auto 90px;
     grid-template-areas:
-    "header-noticias"
+    "navbar"
     "title-noticias"
     "section-noticias"
     "section-noticiasdos"
     "footer-noticias";
-     .header-noticias{
-    grid-area: "header-noticias";
+     .navbar{
+    grid-area: "navbar";
     }
     
     .section-noticias{

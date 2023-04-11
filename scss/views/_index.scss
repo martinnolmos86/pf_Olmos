@@ -2,13 +2,13 @@
     
     display:grid;
     grid-template-columns:100%;
-    grid-template-rows: 120px auto 90px;
+    grid-template-rows: 130px auto 90px;
     grid-template-areas:
-    "header-index"
+    "navbar"
     "section-index"
     "footer-index";
-     .header{
-    grid-area: "header-index";
+     .navbar{
+    grid-area: "navbar";
     }
      .footer{
         grid-area: "footer-index";
