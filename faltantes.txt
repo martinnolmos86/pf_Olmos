@@ -1,2 +1,0 @@
-navegador -- hover en los enlases
-footer -- color azul no es el mismo que el del nav
