@@ -30,3 +30,14 @@
         }
     }
 }
+
+@media(max-width:476px){
+    .navbar{
+        .lista{
+            font-size: 8px;
+            &__ul{
+                padding-left: 1rem;
+            }
+        }
+    }
+}

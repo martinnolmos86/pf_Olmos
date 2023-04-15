@@ -28,3 +28,13 @@
         font-size: 16px;
     }
 }
+@media(min-width:300px) and (max-width:400px){
+    .form-texto{
+        margin-top: 50px;
+        width: 90%;
+        
+        .area-consulta{
+            width: 100%
+        }
+    }
+}

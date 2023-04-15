@@ -156,7 +156,7 @@ html {
     @media (max-width:768px){
     .noticia{
         text-align: center;
-    flex-direction: column;
+        flex-direction: column;
     }
     .right{
         &__img{
@@ -164,3 +164,13 @@ html {
         }
     }
     }
+    @media(min-width:300px) and (max-width:410px){
+        .section-noticiasdos{
+            width: 100%;
+        .noticia{
+            &__img{
+            width: 100%;
+        }
+    }
+    }
+}

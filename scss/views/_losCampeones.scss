@@ -32,11 +32,19 @@
     font-family: $font-principal;
     .container-players{
         margin: 0 auto;
-        width: 725px;
+        width: auto;
         &__p{
             margin-top: 50px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        &__div{
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
         }
         span{
+            text-align: end;
             color: #fe5000;
         }
         p{
@@ -50,16 +58,28 @@
         img{
             width: 75%;
         }
-    }
-}
-
-@media (max-width: 768px){
-    .container-players{
-        text-align: center;
-        img{
-            width: 75%;
-            
+        .container-players{
+            img{
+                width: 75%;
+            }
         }
     }
 }
+
+@media(min-width:310px) and (max-width:710px){
+    .container-players{
+        &__p{
+            width: 95%;
+            margin: 0 auto;
+        }
+        &__div{
+            width: 95%;
+            margin: 0 auto;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
 

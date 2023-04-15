@@ -102,6 +102,14 @@
     font-size: 16px;
   }
 }
+@media (max-width: 476px) {
+  .navbar .lista {
+    font-size: 8px;
+  }
+  .navbar .lista__ul {
+    padding-left: 1rem;
+  }
+}
 .gridcontainer-recorrido {
   display: grid;
   grid-template-columns: 100%;
@@ -177,12 +185,20 @@
 }
 .section-loscampeones .container-players {
   margin: 0 auto;
-  width: 725px;
+  width: auto;
 }
 .section-loscampeones .container-players__p {
   margin-top: 50px;
+  width: 90%;
+  margin: 0 auto;
+}
+.section-loscampeones .container-players__div {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
 }
 .section-loscampeones .container-players span {
+  text-align: end;
   color: #fe5000;
 }
 .section-loscampeones .container-players p {
@@ -193,13 +209,21 @@
   .messiCopa img {
     width: 75%;
   }
-}
-@media (max-width: 768px) {
-  .container-players {
-    text-align: center;
-  }
-  .container-players img {
+  .messiCopa .container-players img {
     width: 75%;
+  }
+}
+@media (min-width: 310px) and (max-width: 710px) {
+  .container-players__p {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .container-players__div {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .container-players__div img {
+    width: 100%;
   }
 }
 .gridcontainer-noticias {
@@ -348,6 +372,14 @@ html {
     margin-top: 15px;
   }
 }
+@media (min-width: 300px) and (max-width: 410px) {
+  .section-noticiasdos {
+    width: 100%;
+  }
+  .section-noticiasdos .noticia__img {
+    width: 100%;
+  }
+}
 .form-texto {
   width: 400px;
   background: #24303c;
@@ -383,6 +415,15 @@ html {
   font-size: 16px;
 }
 
+@media (min-width: 300px) and (max-width: 400px) {
+  .form-texto {
+    margin-top: 50px;
+    width: 90%;
+  }
+  .form-texto .area-consulta {
+    width: 100%;
+  }
+}
 .section__h1 {
   font-size: 32px !important;
 }
